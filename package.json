@@ -1,0 +1,16 @@
+{
+  "name": "nuevaver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^2.4.0",
+    "stylus": "^0.53.0",
+    "tipso": "^1.0.8"
+  }
+}
