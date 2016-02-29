@@ -1,6 +1,10 @@
 @import './reset'
 @import './normalize.css'
-@import './content'
+@import './welcome'
+@import './info'
+@import './info-extra'
+@import './register'
+@import './plugins'
 
 body
 	overflow-y hidden
@@ -12,7 +16,8 @@ body
 	-webkit-font-smoothing antialiased
 	
 .main, .welcome-content, .info-newdot,
-.info-content, .register, .form-content
+.info-content, info-newdot-extra, 
+.info-content-extra, .register, .form-content
 	height 100%
 
 .main
@@ -21,11 +26,14 @@ body
 	background-color #000000
 	
 .info-newdot
+	background-color #31b855
+	
+.info-newdot-extra
 	background-color #e62739
 	
 .register
-	background-image url(../../images/b20.jpg)
-	background-position 50% 0
+	background-image url(../../images/b25.jpg)
+	background-position 50px 50%
 	background-color #000000
 	
 .main, .info-newdot, .register	
