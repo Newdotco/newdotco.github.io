@@ -1,4 +1,6 @@
 $(function() {
+  $('#first').addClass("select");
+
   $('a[href^="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -12,8 +14,12 @@ $(function() {
     }
   });
 
+  $('.about-newdot').click(function() {
+    $('#first').removeClass("select");
+    $('#second').addClass("select");
+  })
+
   $('.pagination a').click(function() {
-    $(this).prop("box-shadow", false);
-    $(this).addClass("active").siblings().removeClass("active");
+    $(this).addClass("select").siblings().removeClass("select");
   });
 });
