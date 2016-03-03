@@ -6,34 +6,49 @@ body
 	margin 0
 	display block
 	letter-spacing 0
+	font-style normal
 	font-weight 400
 	text-rendering optimizeLegibility
 	-webkit-font-smoothing antialiased
-
-.main, .welcome-content, .info-newdot,
-.info-content, info-newdot-extra, 
-.info-content-extra, .register, .form-content
-	height 100%
-
-.main
-	background-image url(../../images/b8.jpg)
-	background-position 50% -20%
-	background-color #000000
-
-.info-newdot
-	background-color #31b855
 	
-.info-newdot-extra
-	background-color #e62739
+.main
+	background-color #FFE74C
+	
+.main, .welcome-content, 
+	height 100%
+	
+.info-newdot, .info-newdot-extra, .register
+	visibility hidden
 
-.register
-	background-image url(../../images/b22.jpg)
-	background-position 50% -100%
-	background-color #000000
+/*----- Desktop -----*/			
 
-.main, .info-newdot, .register
-	background-repeat no-repeat
-	background-size cover
+@media (min-width 1024px)
+	.info-newdot, .info-content, info-newdot-extra, 
+	.info-content-extra, .register, .form-content
+		height 100%	
+
+	.main
+		background-color #000000
+		background-image url(../../images/b8.jpg)
+		background-position 50% -20%
+		
+	.info-newdot
+		visibility visible
+		background-color #FFE74C
+		
+	.info-newdot-extra
+		visibility visible
+		background-color #6BF178
+		
+	.register
+		visibility visible
+		background-color #000000
+		background-image url(../../images/b22.jpg)
+		background-position 50% -100%
+
+	.main, .register
+		background-repeat no-repeat
+		background-size cover
 
 @import './welcome'
 @import './info'

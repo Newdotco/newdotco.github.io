@@ -1,43 +1,46 @@
 /*------ SECOND PAGE ------*/
 
-.info-content
-	display flex
-	justify-content space-between
-	align-self center
+/*----- Desktop -----*/
 
-	.container
-		height 410px
-		width 100%
+@media (min-width 1024px)
+	.info-content
 		display flex
 		justify-content space-between
-		flex-flow nowrap
 		align-self center
 		
-		.info-logo
-			order 1
+		.container
+			height 410px
+			width 100%
+			display flex
+			justify-content space-between
+			flex-flow nowrap
 			align-self center
-			padding-left 200px
-
-		.info-text
-			order 2
-			align-self center
-			width 520px
-			text-align left
-			background 0
-			padding-right 80px
 			
-			h1
-				font-family Lato, "Helvetica Neue", sans-serif
-				line-height 1
-				color #fff
-				font-size 38px
-				font-weight 700
-				text-shadow none
+			.info-logo
+				order 1
+				align-self center
+				padding-left 200px
+
+			.info-text
+				order 2
+				align-self center
+				width 520px
+				text-align left
+				background 0
+				padding-right 80px
 				
-			p
-				font-family Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif 
-				font-size 18px
-				color #fff
-				font-style normal
-				letter-spacing 0
-				line-height 1.2
+				h1
+					font-family Lato, "Helvetica Neue", sans-serif
+					line-height 1
+					color #333
+					font-size 38px
+					font-weight 700
+					text-shadow none
+					
+				p
+					font-family Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif 
+					font-size 18px
+					color #333
+					font-style normal
+					letter-spacing 0
+					line-height 1.2

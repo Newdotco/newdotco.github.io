@@ -1,75 +1,80 @@
 /*------ FOURTH PAGE ------*/
 
-.form-content
-	display flex
-	justify-content space-between
-	flex-flow nowrap
-	align-self center
-	
-	.group 
-		height 100%
-		width 100%
-		display flex
-		justify-content center
-		flex-flow column wrap
-		align-self center
-		align-items center
+/*----- Desktop -----*/
 
-		.signin-title
-			margin-bottom 30px
-			
-			.main-title
-				line-height 1.2
-				text-align center	
-				letter-spacing 0
-				font-family Lato, "Helvetica Neue", sans-serif
-				color #fff
-				font-size 32px
-				font-style normal
-				font-weight 700
+@media (min-width 1024px)
+	.form-content
+		display flex
+		justify-content space-between
+		flex-flow nowrap
+		align-self center
+		
+		.group 
+			height 100%
+			width 100%
+			display flex
+			justify-content center
+			flex-flow column wrap
+			align-self center
+			align-items center
+
+			.signin-title
+				max-width 900px
+				margin-bottom 30px
+				
+				.main-title
+					line-height 1.2
+					text-align center	
+					letter-spacing 0
+					font-family Lato, "Helvetica Neue", sans-serif
+					color #fff
+					font-size 32px
+					font-style normal
+					font-weight 700
+					text-shadow none
+					
+				#congrats
+					font-family Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif 
+					font-size 18px
+					color #fff
+					margin 15px auto 0
+					font-style normal
+					letter-spacing 0
+					line-height 1.2
+					text-align center
+					font-weight bold
+					
+								
+			.text-input 
+				width 300px
+				height 45px
+				padding 6px 10px 6px 13px
+				margin 0
+				border 0
+				font 16px/1.4 Helvetica, Arial, sans-serif	
+				box-sizing border-box
+				color #222
+				border-radius 5px
+				outline 0
+				text-rendering auto
+				letter-spacing normal
+				word-spacing normal
+				text-transform none
+				text-indent 0px
 				text-shadow none
+				text-align start
 				
-			#congrats
-				font-family Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif 
-				font-size 18px
-				color #fff
-				margin 10px auto 0
-				font-style normal
-				letter-spacing 0
-				line-height 1.2
-				text-align center
+			.signin-button
+				height 45px
+				width 300px
+				border 1px solid #FFE74C
+				box-sizing border-box
+				font-size 16px
+				text-shadow 1px 0px 2px rgba(150, 150, 150, 1)
 				font-weight bold
-				
-							
-		.text-input 
-			width 300px
-			height 45px
-			padding 6px 10px 6px 13px
-			margin 0
-			border 0
-			font 16px/1.4 Helvetica, Arial, sans-serif	
-			box-sizing border-box
-			color #222
-			border-radius 5px
-			outline 0
-			text-rendering auto
-			letter-spacing normal
-			word-spacing normal
-			text-transform none
-			text-indent 0px
-			text-shadow none
-			text-align start
-			
-		.signin-button
-			height 45px
-			width 300px
-			border 1px solid #e62739
-			box-sizing border-box
-			font-size 16px
-			font-weight bold
-			font-family Helvetica, Arial, sans-serif
-			cursor pointer
-			margin-top 8px
-			border-radius 5px
-			color #fff
-			background-color #e62739
+				font-family Helvetica, Arial, sans-serif
+				cursor pointer
+				margin-top 8px
+				border-radius 5px
+				color #fff
+				background-color #FFE74C
