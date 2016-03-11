@@ -17,7 +17,7 @@ body
 .main, .welcome-content, 
 	height 100%
 	
-.info-newdot, .info-newdot-extra, .register
+.info-newdot, .info-newdot-extra, .register, .invitation
 	visibility hidden
 
 /*----- Desktop -----*/			
@@ -29,22 +29,26 @@ body
 
 	.main
 		background-color #000000
-		background-image url(../../images/b8.jpg)
-		background-position 50% -20%
+		background-image url(../../images/b8-edit.png)
+		background-position 50% 0
 		
 	.info-newdot
 		visibility visible
-		background-color #FFE74C
+		background-color #fe7f0a
 		
 	.info-newdot-extra
 		visibility visible
-		background-color #6BF178
+		background-color #15a3ed
 		
 	.register
 		visibility visible
 		background-color #000000
 		background-image url(../../images/b22.jpg)
 		background-position 50% -100%
+		
+	.invitation
+		visibility visible
+		background-color #FFFC00
 
 	.main, .register
 		background-repeat no-repeat
@@ -54,4 +58,5 @@ body
 @import './info'
 @import './info-extra'
 @import './register'
+@import './invitation'
 @import './plugins'
