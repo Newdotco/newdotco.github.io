@@ -19,6 +19,21 @@ $(function() {
     $('#second').addClass("select");
   })
 
+  $('.signin-button').click(function() {
+    $('.pagination').append("<a href='#invitation' class='dot' id='fifth'></a>");
+    $('#fourth').removeClass("select");
+    $('#fifth').addClass("select");
+    $('.pagination').hide();
+  })
+
+  $('.logo-register').click(function() {
+    $('.pagination').show('slow', function() {
+      $('#fifth').removeClass("select");
+      $('#first').addClass("select");
+      $('#fifth').hide();
+    });
+  });
+
   $('.pagination a').click(function() {
     $(this).addClass("select").siblings().removeClass("select");
   });
