@@ -36,7 +36,7 @@ $(function() {
 
   $('#invitation-mobile').click(function() {
     //$('.info-newdot, .info-newdot-extra, .register').css('display', 'none');
-    //$('.about-newdot').hide();
+    $('.about-newdot').hide();
     $('.invitation').css('visibility', 'visible');
   });
 
