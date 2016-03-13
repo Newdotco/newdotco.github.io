@@ -36,8 +36,8 @@ $(function() {
 
   $('#invitation-mobile').click(function() {
     //$('.info-newdot, .info-newdot-extra, .register').css('display', 'none');
-    $('.about-newdot').hide();
-    $('.invitation').css('visibility', 'visible');
+    //$('.about-newdot').hide();
+    $('.invitation').css('display', 'block');
   });
 
   $('.pagination a').click(function() {
