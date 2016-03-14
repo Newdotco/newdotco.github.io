@@ -19,13 +19,6 @@ $(function() {
     $('#second').addClass("select");
   })
 
-  $('.signin-button').click(function() {
-    $('.pagination').append("<a href='#invitation' class='dot' id='fifth'></a>");
-    $('#fourth').removeClass("select");
-    $('#fifth').addClass("select");
-    $('.pagination').hide();
-  })
-
   $('.logo-register').click(function() {
     $('.pagination').show('slow', function() {
       $('#fifth').removeClass("select");
@@ -35,7 +28,6 @@ $(function() {
   });
 
   $('#invitation-mobile').click(function() {
-    //$('.info-newdot, .info-newdot-extra, .register').css('display', 'none');
     $('.about-newdot').hide();
     $('.invitation').css('display', 'block');
   });
